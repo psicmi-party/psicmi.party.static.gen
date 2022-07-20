@@ -19,8 +19,9 @@ if [ -z "$PSICMI_PARTY_TOKEN" ]; then
 else
   commit_info='来自github action的自动部署'
   push_addr=https://psicmi-party:${PSICMI_PARTY_TOKEN}@github.com/psicmi-party/psicmi-party.github.io.git
-  git config --global user.name "psicmi"
-  git config --global user.email "hello@psicmi.party"
+  git config --global init.defaultBranch "main"
+  git config --global user.name "psicmi@163.com"
+  git config --global user.email "psicmi@163.com"
 fi
 
 git init
