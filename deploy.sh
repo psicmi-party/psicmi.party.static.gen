@@ -1,0 +1,32 @@
+#!/usr/bin/env sh
+
+# 确保脚本抛出遇到的错误
+set -e
+
+dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
+
+# 生成静态文件
+npm run build
+
+# 进入生成的文件夹
+cd $dist_path
+
+# deploy to github
+echo 'psicmi.party' > CNAME
+if [ -z "$PSICMI_PARTY_TOKEN" ]; then
+  commit_info='deploy'
+  push_addr=git@github.com:psicmi-party/psicmi-party.github.io.git
+else
+  commit_info='来自github action的自动部署'
+  push_addr=https://psicmi-party:${PSICMI_PARTY_TOKEN}@github.com/psicmi-party/psicmi-party.github.io.git
+  git config --global user.name "psicmi"
+  git config --global user.email "hello@psicmi.party"
+fi
+
+git init
+git add -A
+git commit -m "deploy, $commit_info"
+git push -f $push_addr master:master
+
+cd -
+rm -rf $dist_path
