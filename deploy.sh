@@ -27,7 +27,7 @@ fi
 git init
 git add -A
 git commit -m "deploy, $commit_info"
-git push -f $push_addr master:master
+git push -f $push_addr main:main
 
 cd -
 rm -rf $dist_path
