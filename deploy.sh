@@ -25,7 +25,6 @@ else
   git config --global user.name "psicmi@163.com"
   git config --global user.email "psicmi@163.com"
 fi
-
 git init
 git add -A
 git commit -m "deploy, $commit_info"
