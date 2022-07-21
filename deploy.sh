@@ -14,9 +14,11 @@ cd $dist_path
 # deploy to github
 echo 'psicmi.party' > CNAME
 if [ -z "$PSICMI_PARTY_TOKEN" ]; then
+  echo 'no token'
   commit_info='deploy'
   push_addr=git@github.com:psicmi-party/psicmi-party.github.io.git
 else
+  echo 'with token'
   commit_info='来自github action的自动部署'
   push_addr=https://psicmi-party:${PSICMI_PARTY_TOKEN}@github.com/psicmi-party/psicmi-party.github.io.git
   git config --global init.defaultBranch "master"
@@ -27,7 +29,7 @@ fi
 git init
 git add -A
 git commit -m "deploy, $commit_info"
-git push -f $push_addr
+git push -f $push_addr master:master
 
 cd -
 rm -rf $dist_path
