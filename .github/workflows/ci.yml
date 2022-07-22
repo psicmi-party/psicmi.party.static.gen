@@ -30,14 +30,4 @@ jobs:
         env: # 设置环境变量
           PSICMI_PARTY_TOKEN: ${{ secrets.PSICMI_PARTY_TOKEN }} # token
         run: npm install && npm run deploy
-      - name: Send mail
-        uses: dawidd6/action-send-mail@master
-        with:
-          server_address: smtp.exmail.qq.com
-          server_port: 465
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
-          subject: psicmi.party github actions done
-          body: https://psicmi.party
-          to: ${{ secrets.MAIL_TO }}
-          from: GitHub Actions
+        
