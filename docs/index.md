@@ -2,7 +2,7 @@
 home: true
 # heroImage: /img/web.png
 heroText: psicmi.party
-tagline: Web前端技术博客，积跬步以至千里，致敬每个爱学习的你。
+tagline: 探索开源。
 ---
 
 
