@@ -19,7 +19,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       description: 'psicmi.party。github开源记录等技术文章。',
     }
   },
-  // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
+  base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
 
   // 主题配置
   themeConfig: {
@@ -218,19 +218,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
 
-    [
-      'demo-block', // demo演示模块 https://github.com/xiguaxigua/vuepress-plugin-demo-block
-      {
-        settings: {
-          // jsLib: ['http://xxx'], // 在线示例(jsfiddle, codepen)中的js依赖
-          // cssLib: ['http://xxx'], // 在线示例中的css依赖
-          // vue: 'https://fastly.jsdelivr.net/npm/vue/dist/vue.min.js', // 在线示例中的vue依赖
-          jsfiddle: false, // 是否显示 jsfiddle 链接
-          codepen: true, // 是否显示 codepen 链接
-          horizontal: false, // 是否展示为横向样式
-        },
-      },
-    ],
     [
       'vuepress-plugin-zooming', // 放大图片
       {
