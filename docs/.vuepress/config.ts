@@ -28,12 +28,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
 
       {
-        text: 'repo列表',
+        text: '动手练练',
         link: '/repos/'
       },
 
       {
-        text: '很棒的项目',
+        text: '随处看看',
         link: '/amazing/'
       },
 
