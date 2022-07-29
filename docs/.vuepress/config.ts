@@ -1,7 +1,6 @@
 /**
  * 提示：如您想使用JS版本的配置文件可参考：https://github.com/psicmi-party/psicmi.party.static.gen/tree/a2f03e993dd2f2a3afdc57cf72adfc6f1b6b0c32/docs/.vuepress
  */
-import { resolve } from 'path'
 import { defineConfig4CustomTheme, UserPlugins } from 'vuepress/config'
 import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
 import dayjs from 'dayjs'
@@ -77,13 +76,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // ],
     // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
 
-    // updateBar: { // 最近更新栏
-    //   showToArticle: false, // 显示到文章页底部，默认true
-    //   moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
-    // },
-    // rightMenuBar: false, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
-    // sidebarOpen: false, // 初始状态是否打开左侧边栏，默认true
-    // pageButton: false, // 是否显示快捷翻页按钮，默认true
+    updateBar: { // 最近更新栏
+      showToArticle: false, // 显示到文章页底部，默认true
+      moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
+     },
+    rightMenuBar: true, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
+    sidebarOpen: true, // 初始状态是否打开左侧边栏，默认true
+    pageButton: true, // 是否显示快捷翻页按钮，默认true
 
     // 默认外观模式（用户未在页面手动修改过模式时才生效，否则以用户设置的模式为准），可选：'auto' | 'light' | 'dark' | 'read'，默认'auto'。
     // defaultMode: 'auto',

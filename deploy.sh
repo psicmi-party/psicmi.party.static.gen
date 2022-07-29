@@ -8,6 +8,9 @@ dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
 # 生成静态文件
 npm run build
 
+# 生成repo的readme.md
+cp PAGES.MD $dist_path
+
 # 进入生成的文件夹
 cd $dist_path
 
