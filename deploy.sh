@@ -9,7 +9,7 @@ dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
 npm run build
 
 # 生成repo的readme.md
-cp PAGES.MD $dist_path
+cp PAGES.MD $dist_path/README.MD
 
 # 进入生成的文件夹
 cd $dist_path
