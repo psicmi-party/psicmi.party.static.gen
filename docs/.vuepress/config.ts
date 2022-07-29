@@ -23,6 +23,21 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       { text: '首页', link: '/' },
      
       {
+        text: '不妨试试',
+        link: '/how-to/'
+      },
+
+      {
+        text: 'repo列表',
+        link: '/repos/'
+      },
+
+      {
+        text: '很棒的项目',
+        link: '/amazing/'
+      },
+
+      {
         text: '索引',
         link: '/archives/',
         items: [
