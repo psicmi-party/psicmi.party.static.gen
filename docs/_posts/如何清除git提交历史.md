@@ -1,9 +1,6 @@
 ---
-title: 如何清除git提交历史
 date: 2023-06-20 10:24:00
-permalink: /pages/clean-git-commits
-article: false
-comment: true
+comment: flase
 editLink: false 
 ---
 
