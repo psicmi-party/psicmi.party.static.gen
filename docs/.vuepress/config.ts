@@ -126,8 +126,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       author: {
         name: 'psicmi.party',
         link: 'https://github.com/psicmi-party'
-      },
-      permalink: '/:year/:month/:day/:slug'
+      }
+      
     },
 
     // 自定义hmtl(广告)模块
