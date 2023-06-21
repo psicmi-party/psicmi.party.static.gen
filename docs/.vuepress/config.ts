@@ -126,7 +126,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       author: {
         name: 'psicmi.party',
         link: 'https://github.com/psicmi-party'
-      }
+      },
+      permalink: '/:year/:month/:day/:slug'
     },
 
     // 自定义hmtl(广告)模块
@@ -247,7 +248,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     extractHeaders: ['h2', 'h3', 'h4', 'h5', 'h6'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
   },
 
-  permalink: '/:year/:month/:day/:slug',
 
   // 监听文件变化并重新构建
   extraWatchFiles: [
