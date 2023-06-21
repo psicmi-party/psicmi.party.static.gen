@@ -1,7 +1,8 @@
 ---
 date: 2023-06-20 10:24:00
 comment: flase
-editLink: false 
+editLink: false
+permalink: '/:year/:month/:day/:slug'
 ---
 
 # 如何清除git提交历史
