@@ -216,7 +216,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         options: {
           clientID: '9aa9b5cc1f755a3b4c0e',
           clientSecret: 'f7cbcf8e0c4f1dcb04856cddf85c32d516aeec22',
-          repo: 'gitalk', // GitHub 仓库
+          repo: 'psicmi-party.github.io', // GitHub 仓库
           owner: 'psicmi-party', // GitHub仓库所有者
           admin: ['psicmi'], // 对仓库有写权限的人
           proxy: 'https://strong-caramel-969805.netlify.app/github_access_token',
